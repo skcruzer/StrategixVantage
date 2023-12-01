@@ -1,0 +1,23 @@
+/* ======================== google fonts ======================== */
+
+
+#header{
+  display: inline-flex;
+  width: 100%;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFF;
+}
+
+.nav-logo{
+  flex-direction: column;
+  height: 32px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 2px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
