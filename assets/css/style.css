@@ -134,6 +134,20 @@
   /* 125% */
 }
 
+.line-rounded-arrow {
+  position: relative;
+  width: 12px;
+  height: 12px;
+}
+
+.hero-image {
+  position: absolute;
+  width: 556px;
+  height: 310px;
+  top: 131px;
+  left: 728px;
+}
+
 /* ======================== media queries ======================== */
 @media screen and (max-width: 480px) {
 
@@ -162,8 +176,8 @@
   }
 
   .nav-social {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
   }
 
   /* ============ hero ============  */
@@ -174,7 +188,7 @@
     padding: 48px 20px;
     flex-direction: column;
     align-items: flex-start;
-    flex-shrink: 0;
+    gap: 40px;
   }
 
   .hero-content {
@@ -202,5 +216,10 @@
 
   .hero-button {
     width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 186px;
   }
 }
