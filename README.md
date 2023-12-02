@@ -1,1 +1,1 @@
-# StratigixVantage
+# StrategixVantage
