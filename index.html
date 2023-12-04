@@ -14,54 +14,112 @@
   <!-- ======================== css ======================== -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/styleguide.css">
+  <link href="assets/css/normalize.css" rel="stylesheet">
 
 </head>
 
 <body>
   <!-- ======================== header ======================== -->
-  <header class="navbar">
-    <div class="header">
-      <img src="assets/images/nav-black-logo.svg" alt="Strategix Vantage Logo" class="nav-logo">
-      <div class="header-right">
-        <a href="mailto:contact@stratigixvantage.com" target="_blank"><img class="nav-social"
-            src="assets/images/nav-email.svg" /></a>
-        <a href="https://www.linkedin.com/in/your-profile-link" target="_blank"><img class="nav-social"
-            src="assets/images/nav-linkedin.svg" /></a>
-      </div>
+  <header>
+    <div class="grid">
+      <div class="content">
+        <div class="header-left">
+          <img src="assets/images/nav-black-logo.svg" alt="logo" class="header-logo">
+          <div class="header-right">
+            <a href="mailto:contact@stratigixvantage.com" target="_blank"><img class="header-social"
+                src="assets/images/nav-email.svg" alt="email" /></a>
+            <a href="https://www.linkedin.com/in/your-profile-link" target="_blank"><img class="header-social"
+                src="assets/images/nav-linkedin.svg" alt="linkedin" /></a>
+          </div>
+        </div>
 
+      </div>
     </div>
   </header>
 
-  <!-- ======================== hero section ======================== -->
-  <div class="hero-section">
-    <div class="hero-content">
-      <div class="content">
-        <div class="results">
-          Results Oriented Consulting: Tailored to Your Vision
-        </div>
+  <main>
+    <!-- ======================== hero section ======================== -->
+    <section class="grid grid-hero">
+      <div class="hero-left">
+        <h1 class="results">Results Oriented Consulting: Tailored to Your Vision </h1>
         <p class="hero-paragraph">
           Dynamic consultants with proven scaling expertise for strategic business growth and success.
         </p>
+
+
+        <button type="button" class="btn hero-button">
+          <!-- Calendly link widget begin -->
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+          <a href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/seankennethcruz/initial-assessment'});return false;"
+            class="btn button-text">Book an Appointment <img class="line-rounded-arrow"
+              src="assets/images/line-rounded-arrow-rigth-7.svg" />
+          </a>
+          <!-- Calendly link widget end -->
+        </button>
       </div>
-      <button type="button" class="btn hero-button">
-        <!-- Calendly link widget begin -->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <a href=""
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/seankennethcruz/initial-assessment'});return false;"
-          class="btn button-text">Book an Appointment
-          <img class="line-rounded-arrow" src="assets/images/line-rounded-arrow-rigth-7.svg" />
-        </a>
-        <!-- Calendly link widget end -->
-      </button>
+
+      <div class="hero-right">
+        <img class="hero-image" src="assets/images/hero-image.svg" alt="Hero Image">
+      </div>
+
+    </section>
+    <!-- ======================== stats section ======================== -->
+    <div class="grid grid-stat">
+      <div class="stat-left">
+        <h1 class="success-statement">
+          Quantifying Excellence: Our Success in Numbers
+        </h1>
+        <p class="founders-statement">
+          Our founders are two seasoned entrepreneurs with a proven track record. Scaling companies from 5 to 400
+          employees to
+          effectively managing a book of business of over 50 million per year.
+        </p>
+      </div>
+      <div class="stat-middle">
+        <div class="stat-card">
+          <img src="assets/images/stat-revgen-icon.svg" alt="">
+          <h2 class="stat-header">
+            500+ Million
+          </h2>
+          <p class="stat-line">
+            Revenue Generated
+          </p>
+        </div>
+        <div class="stat-card">
+          <img src="assets/images/stat-opbuild-icon.svg" alt="">
+          <h2 class="stat-header">
+            40+
+          </h2>
+          <p class="stat-line">
+            Operational Buildouts
+          </p>
+        </div>
+      </div>
+      <div class="stat-right">
+        <div class="stat-card">
+          <img src="assets/images/stat-clientsat-icon.svg" alt="">
+          <h2 class="stat-header">
+            100% 
+          </h2>
+          <p class="stat-line">
+            Client Satisfaction
+          </p>
+        </div>
+        <div class="stat-card">
+          <img src="assets/images/stat-indimpact-icon.svg" alt="">
+          <h2 class="stat-header">
+            50+
+          </h2>
+          <p class="stat-line">
+            Industries Impacted
+          </p>
+        </div>
+      </div>
     </div>
-    <img class="hero-image" src="assets/images/hero-image.svg" alt="Hero Image">
-  </div>
 
-
-
-
-
+  </main>
 
 
 
