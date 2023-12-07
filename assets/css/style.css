@@ -12,15 +12,14 @@ body {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   gap: 20px;
-  padding: 0px 156px;
-  grid-template-areas: ". content content content content content content content content content content content content content content content content content content content content content content content content .";
+  padding: 5px 120px;
+  grid-template-areas: ". content content content content content content content content content content content content content content content content content content content content content content content content content content .";
 }
 
 .content {
   grid-area: content;
-  max-width: 1000px;
+  max-width: 1440px;
   width: 100%;
-  justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,11 +66,10 @@ body {
   grid-template-areas: ". hero-left hero-left hero-left hero-left hero-left hero-left hero-left hero-left hero-left hero-left hero-left hero-left hero-right hero-right hero-right hero-right hero-right hero-right hero-right hero-right hero-right hero-right hero-right hero-right .";
   background: var(--neutral-50, #F4F5F5);
   width: 100%;
-  height: 583px;
   flex-shrink: 0;
   height: auto;
   align-items: center;
-  padding: 125px 156px;
+  padding: 75px 156px;
 }
 
 .hero-left {
@@ -79,9 +77,10 @@ body {
   width: 100%;
   height: auto;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
   position: stretch;
 }
 
@@ -102,7 +101,7 @@ body {
   align-self: stretch;
   /* Heading/H1/Medium */
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: 50px;
@@ -115,7 +114,7 @@ body {
   color: var(--neutral-800, #343D46);
   /* Paragraph/P1/Regular */
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -155,11 +154,10 @@ body {
   font-weight: 600;
   line-height: 20px;
   /* 125% */
-  padding: 0px 18px;
+  padding: 0px 28px;
 }
 
 .line-rounded-arrow {
-  position: relative;
   width: 12px;
   height: 12px;
 }
@@ -168,7 +166,7 @@ body {
 
 /* ======================== stat section ======================== */
 .grid-stat {
-  grid-template-areas: ". stat-left stat-left stat-left stat-left stat-left stat-left stat-middle stat-middle stat-middle stat-middle stat-middle stat-middle stat-middle stat-middle stat-middle stat-right stat-right stat-right stat-right stat-right stat-right stat-right stat-right stat-right .";
+  grid-template-areas: ". stat-left stat-left stat-left stat-left stat-left stat-left stat-left stat-left stat-left stat-left stat-left stat-left stat-right stat-right stat-right stat-right stat-right stat-right stat-right stat-right stat-right stat-right stat-right stat-right .";
   background: var(--neutral-900, #111417);
   display: flex;
   width: 100%;
@@ -180,17 +178,6 @@ body {
 
 .stat-left {
   grid-area: stat-left;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  position: stretch;
-}
-
-.stat-middle {
-  grid-area: stat-middle;
   width: 100%;
   height: auto;
   display: flex;
@@ -238,8 +225,9 @@ body {
 
 .stat-card {
   display: flex;
-  width: 283px;
+  width: 300px;
   padding: 16px 12px;
+  padding-bottom: 24px;
   align-items: center;
   gap: 16px;
   border-radius: 4px;
@@ -248,7 +236,6 @@ body {
 
 .stat-header {
   color: var(--neutral-100, #E4E8EB);
-  
   /* Heading/H3/Semi Bold */
   font-family: Poppins;
   font-size: 28px;
@@ -261,7 +248,7 @@ body {
 
 .stat-line {
   color: var(--neutral-100, #E4E8EB);
-
+  position: absolute;
   /* Sub H/Medium */
   font-family: Poppins;
   font-size: 18px;
@@ -271,24 +258,25 @@ body {
   /* 122.222% */
 }
 
+
 /* ======================== media queries ======================== */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
 
 
   /* ============ header ============  */
-  /* .header-left {
+  .grid {
     display: flex;
     width: 100%;
-    padding: 12px 20px;
+    padding: 5px 0px;
     justify-content: space-between;
     align-items: center;
   }
 
   .header-logo {
     display: flex;
-    width: 76px;
-    height: 26px;
+    width: 90px;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -297,33 +285,24 @@ body {
   .header-right {
     display: inline-flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: 16px;
   }
 
   .header-social {
-    width: 24px;
-    height: 24px;
-  } */
+    width: 30px;
+    height: auto;
+    flex-shrink: 0;
+  }
 
   /* ============ hero ============  */
-  /* .hero-section {
+  .grid-hero {
     display: flex;
     width: 100%;
-    height: 720px;
     padding: 48px 20px;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
     position: relative;
-  }
-
-  .hero-content {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    position: grid;
-    gap: 40px;
   }
 
   .results {
@@ -332,13 +311,14 @@ body {
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
-    line-height: 44px; */
-  /* 122.222% */
-  /* letter-spacing: -1.44px;
+    line-height: 44px;
+    /* 122.222% */
+    letter-spacing: -1.44px;
   }
 
   .hero-paragraph {
     text-align: center;
+    font-size: 19px;
   }
 
   .hero-button {
@@ -346,11 +326,13 @@ body {
     margin-bottom: 40px;
   }
 
-  .hero-image {
-    position: grid;
-    width: 100%;
-    height: 186px;
+  /* .hero-right {
+    position: absolute;
   } */
+
+  .hero-image {
+    width: 100%;
+  }
 
   /* ============ stat ============  */
   /* .stat-section {
