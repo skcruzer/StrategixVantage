@@ -18,7 +18,6 @@ body {
 
 .content {
   grid-area: content;
-  max-width: 1440px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -171,11 +170,10 @@ body {
   display: flex;
   width: 100%;
   height: auto;
-  padding: 80px 186px;
-  gap: 35px;
+  padding: 80px 200px;
   justify-content: space-between;
   align-items: flex-start;
-  column-gap: 80px;
+  column-gap: 50px;
 }
 
 .stat-left {
@@ -197,7 +195,7 @@ body {
   align-items: flex-start;
   gap: 20px;
   position: stretch;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .stat-col-1, .stat-col-2 {
@@ -232,7 +230,7 @@ body {
 
 .stat-card {
   display: flex;
-  width: 300px;
+  width: 283px;
   padding: 14px 12px;
   padding-bottom: 26px;
   align-items: center;
@@ -263,6 +261,161 @@ body {
   font-weight: 500;
   line-height: 22px;
   /* 122.222% */
+}
+
+
+/* ======================== services section ======================== */
+.services {
+  background: var(--neutral-50, #F4F5F5);
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 40px 176px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.services-intro {
+  display: flex;
+  padding: 20px 20px;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.services-title {
+  color: var(--neutral-900, #111417);
+  /* Heading/H2/Medium */
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  /* 122.222% */
+  letter-spacing: -1.44px;
+}
+
+.services-line {
+  color: var(--neutral-800, #343D46);
+
+  /* Paragraph/P2/Regular */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+.grid-services {
+  grid-template-areas: ". services-left services-left services-left services-left services-left services-left services-left services-left services-middle services-middle services-middle services-middle services-middle services-middle services-middle services-middle services-right services-right services-right services-right services-right services-right services-right services-right .";
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  gap: 50px;
+  align-self: stretch;
+}
+
+.services-left {
+  grid-area: services-left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  gap: 64px;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.services-middle {
+  grid-area: services-middle;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  gap: 64px;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.services-right {
+  grid-area: services-right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  gap: 64px;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  border: none;
+}
+
+.control-badge {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary-50);
+  border-radius: 30px;
+}
+
+.icon {
+  position: relative;
+  display: inline-flex;
+}
+
+.serv-text {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.serv-heading {
+  align-self: stretch;
+  color: var(--neutral-900, #111417);
+
+  /* Heading/H4/Semi Bold */
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 136.364% */
+  letter-spacing: -0.44px;
+}
+
+.serv-paragraph {
+  align-self: stretch;
+  color: var(--neutral-800, #343D46);
+
+  /* Paragraph/P2/Regular */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
 }
 
 
@@ -305,7 +458,7 @@ body {
   .grid-hero {
     display: flex;
     width: 100%;
-    padding: 48px 20px;
+    padding: 48px 35px;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
@@ -341,10 +494,9 @@ body {
   .grid-stat {
     display: flex;
     width: 100%;
-    padding: 40px 30px;
+    padding: 40px 33px;
     flex-direction: column;
-    align-items: flex-start;
-    position: relative;
+    gap: 5px;
   }
 
   .success-statement {
@@ -372,17 +524,66 @@ body {
     /* 150% */
   }
 
+  .stat-right {
+    margin-left: 40px;
+  }
+
   .stat-card {
     display: flex;
     padding: 16px 12px;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
     align-self: stretch;
+    padding-bottom: 20px;
   }
 
   .stat-col-1, .stat-col-2 {
-    display: list-item;
-    gap: 32px;
+    display: inline-grid;
+    gap: 20px;
   }
 
+/* ============ services section mq ============  */
+
+.services {
+  display: flex;
+  padding: 52px 20px;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
 }
+
+.services-intro {
+  padding-right: 50px;
+}
+
+.services-title {
+  font-size: 32px;
+  line-height: 36px;
+  /* 112.5% */
+  text-align: center;
+}
+
+.services-line {
+  text-align: center;
+}
+
+.grid-services {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serv-heading, .serv-paragraph {
+  text-align: center;
+  padding-right: 20px;
+}
+
+.control-badge {
+  align-self: center;
+  padding-right: 130px;
+}
+
+
+}
+
