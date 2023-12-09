@@ -527,16 +527,24 @@ body {
 
   /* Paragraph/P1/Regular */
   font-family: Manrope;
-  font-size: 17.85px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   /* 155.556% */
 }
 
-.american-first-loans {
-  font-size: 16.85px;
+/* .largest-quote {
+  font-size: 21px;
 }
+
+.larger-quote {
+  font-size: 20px;
+}
+
+.smaller-quote {
+  font-size: 17.8px;
+} */
 
 .quote-mark {
   position: inherit;
@@ -554,7 +562,6 @@ body {
 }
 
 .test-button {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   /*gap: 4px;
@@ -581,7 +588,20 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 24px;
+  gap: 20px;
+}
+
+.logo-card {
+  border-radius: 8px;
+  background: #1B1E22;
+  display: flex;
+  width: 159.5px;
+  height: 159.5px;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 
