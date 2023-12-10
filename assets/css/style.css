@@ -4,7 +4,7 @@
 
 body {
   margin: 0 auto;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 /* ======================== header ======================== */
@@ -709,6 +709,105 @@ body {
 
 
 /* ======================== footer section ======================== */
+.footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 24px 156px;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+  position: relative;
+  background: var(--neutral-900, #111417);
+  overflow: hidden;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0px;
+  position: relative;
+  margin-top: -6px;
+  margin-bottom: -6px;
+  flex: 1 0 0;
+}
+
+.logo-white-footer {
+  position: relative;
+  width: 120px;
+  height: 40px;
+}
+
+.copyright {
+  color: var(--neutral-50, #F4F5F5);
+  text-align: center;
+
+  /* Paragraph/P1/Regular */
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 155.556% */
+}
+
+.footer-social {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ellipse-1 {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 82px;
+  left: 351px;
+  background-color: #ef522e;
+  border-radius: 11.5px;
+}
+
+.ellipse-2 {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  top: 83px;
+  left: 312px;
+  background-color: #013369;
+  border-radius: 25.5px;
+}
+
+.ellipse-3 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 46px;
+  left: 1368px;
+  background-color: #a58d62;
+  border-radius: 45px;
+}
+
+.ellipse-4 {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  top: -19px;
+  left: 991px;
+  background-color: #f6a93d;
+  border-radius: 25.5px;
+}
+
+.ellipse-5 {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 15px;
+  left: 951px;
+  background-color: #ef522e;
+  border-radius: 11.5px;
+}
 
 
 /* ======================== media queries ======================== */
@@ -876,7 +975,6 @@ body {
     padding-right: 130px;
   }
 
-
   /* ============ testimonials section mq ============  */
   .testimonials {
     display: flex;
@@ -933,7 +1031,6 @@ body {
     padding: 10px 50px;
     margin-left: 5px;
   }
-
 
   /* ============ footer section mq ============  */
 
