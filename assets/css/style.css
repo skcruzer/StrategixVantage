@@ -424,10 +424,12 @@ body {
 .testimonials {
   background: var(--neutral-900, #111417);
   display: flex;
+  width: 100%;
+  height: auto;
   padding: 80px 186px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 80px;
+  gap: 60px;
   align-self: stretch;
 }
 
@@ -459,10 +461,6 @@ body {
   /* 150% */
 }
 
-.slide {
-  margin-bottom: 20px;
-
-}
 
 .carousel-inner {
   width: inherit;
@@ -470,7 +468,7 @@ body {
 
 .middle-section {
   display: flex;
-  width: 1129px;
+  width: 100%;
   align-items: flex-start;
   justify-content: space-between;
   position: relative;
@@ -481,7 +479,7 @@ body {
   text-align: left;
 }
 
-.test-person {
+.test-logo {
   display: inline-flex;
   align-items: center;
   gap: 16px;
@@ -527,28 +525,24 @@ body {
 
   /* Paragraph/P1/Regular */
   font-family: Manrope;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   /* 155.556% */
 }
 
-/* .largest-quote {
-  font-size: 21px;
+.auto-quote {
+  font-size: 21.5px;
 }
 
-.larger-quote {
-  font-size: 20px;
+.first-homes-quote {
+  font-size: 18.8px;
 }
-
-.smaller-quote {
-  font-size: 17.8px;
-} */
 
 .quote-mark {
   position: inherit;
-  padding-left: 50px;
+  padding-left: 48px;
   justify-content: space-between;
   flex: 0 0 auto;
 }
@@ -556,6 +550,7 @@ body {
 .test-navigate {
   display: inline-flex;
   align-items: flex-start;
+  padding: 10px 500px;
   gap: 16px;
   position: relative;
   flex: 0 0 auto;
@@ -564,9 +559,7 @@ body {
 .test-button {
   align-items: center;
   justify-content: center;
-  /*gap: 4px;
-  */
-  padding: 16px 8px;
+  padding: 16px 12px;
   position: relative;
   flex: 0 0 auto;
   border-radius: 8px;
@@ -575,14 +568,18 @@ body {
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-color: var(--primary-500);
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 200px;
-  padding: 16px 18px;
+  padding: 22px 22px;
+  gap: 40px;
   position: relative;
   flex: 0 0 auto;
   border-radius: 8px;
+  opacity: .9;
 }
+
+.carousel-control-next-icon, .carousel-control-prev-icon:hover {
+  text-decoration: none;
+}
+
 
 .logo-wrap {
   display: inline-flex;
@@ -604,6 +601,114 @@ body {
   gap: 10px;
 }
 
+
+
+/* ======================== cta section ======================== */
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  gap: 32px;
+  padding: 80px 52px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--neutral-50);
+}
+
+.cta-frame {
+  display: flex;
+  flex-direction: column;
+  width: 556px;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 40px;
+  position: relative;
+}
+
+.text-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.cta-header {
+  align-self: stretch;
+  color: var(--neutral-800, #343D46);
+  text-align: center;
+
+  /* Heading/H2/Medium */
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  /* 122.222% */
+  letter-spacing: -1.44px;
+}
+
+.cta-line {
+  align-self: stretch;
+  color: var(--neutral-800, #343D46);
+  text-align: center;
+
+  /* Paragraph/P2/Regular */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+.cta-button-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  all: unset;
+  box-sizing: border-box;
+}
+
+.cta-button {
+  background-color: var(--primary-900);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px 18px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 8px;
+}
+
+.cta-button:hover {
+  color: var(--neutral-50);
+  background-color: #343D46;
+}
+
+.cta-button-text {
+  color: var(--neutral-50, #F4F5F5);
+  text-align: center;
+
+  /* Action/Semibold */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  /* 125% */
+}
+
+
+/* ======================== footer section ======================== */
 
 
 /* ======================== media queries ======================== */
@@ -771,5 +876,65 @@ body {
     padding-right: 130px;
   }
 
+
+  /* ============ testimonials section mq ============  */
+  .testimonials {
+    display: flex;
+    padding: 52px 18px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .test-intro {
+    text-align: left;
+    padding-left: 10px;
+    width: inherit;
+  }
+
+  .test-header {
+    font-size: 32px;
+    line-height: 36px;
+    /* 112.5% */
+  }
+
+  .test-line {
+    width: inherit;
+    font-size: 16px;
+  }
+
+  .middle-section {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+  }
+
+
+
+
+
+  /* ============ cta section mq ============  */
+  .cta-frame {
+    display: flex;
+    width: 100%;
+    padding: 0px 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-header {
+    font-size: 32px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 10px 50px;
+    margin-left: 5px;
+  }
+
+
+  /* ============ footer section mq ============  */
 
 }
