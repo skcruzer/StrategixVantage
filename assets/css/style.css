@@ -620,7 +620,7 @@ body {
   height: auto;
   align-items: center;
   gap: 32px;
-  padding: 80px 52px;
+  padding: 52px 52px;
   position: relative;
   flex: 0 0 auto;
   background-color: var(--neutral-50);
@@ -632,7 +632,7 @@ body {
   width: 556px;
   align-items: center;
   flex: 0 0 auto;
-  gap: 40px;
+  gap: 20px;
   position: relative;
 }
 
@@ -640,11 +640,12 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 2px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+
 }
 
 .cta-header {
@@ -665,8 +666,7 @@ body {
 .cta-line {
   align-self: stretch;
   color: var(--neutral-800, #343D46);
-  text-align: center;
-
+  text-align: center;;
   /* Paragraph/P2/Regular */
   font-family: Manrope;
   font-size: 16px;
@@ -858,7 +858,7 @@ body {
   .grid-hero {
     display: flex;
     width: 100%;
-    padding: 48px 35px;
+    padding: 52px 20px;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
@@ -879,14 +879,14 @@ body {
   .hero-paragraph {
     text-align: center;
     margin-top: -20px;
-    margin-left: -10px;
     margin-bottom: 30px;
     font-size: 18px;
   }
 
   .hero-button {
     width: 100%;
-    margin-bottom: 40px;
+    margin-left: .5px;
+    
   }
 
   .hero-image {
@@ -897,7 +897,7 @@ body {
   .grid-stat {
     display: flex;
     width: 100%;
-    padding: 40px 33px;
+    padding: 52px 30px;
     flex-direction: column;
     gap: 5px;
   }
@@ -927,12 +927,9 @@ body {
     /* 150% */
   }
 
-  .stat-left {
-    margin-left: -10px;
-  }
 
   .stat-right {
-    margin-left: 30px;
+    margin-left: 48px;
     margin-top: 10px;
   }
 
@@ -960,9 +957,6 @@ body {
     align-self: stretch;
   }
 
-  .services-intro {
-    padding-right: 50px;
-  }
 
   .services-title {
     font-size: 32px;
@@ -980,23 +974,25 @@ body {
     padding: 16px;
     flex-direction: column;
     align-items: center;
+    margin-top: -20px;
   }
 
   .serv-heading, .serv-paragraph {
     text-align: center;
-    padding-right: 20px;
   }
 
+  .services-card {
+    margin-bottom: -30px;
+  }
 
   .control-badge {
     align-self: center;
-    margin-right: 20px;
   }
 
   /* ============ testimonials section mq ============  */
   .testimonials {
     display: flex;
-    padding: 52px 18px;
+    padding: 52px 20px;
     align-items: center;
     flex-direction: column;
   }
@@ -1032,13 +1028,14 @@ body {
   }
 
   .test-navigate {
-    margin-top: -20px;
+    margin-top: -30px;
   }
 
   .test-divider {
     width: 100%;
-    margin: -20px 0px;
-    margin-left: -10px;
+    margin: 0px 0px;
+    margin-top: -20px;
+    margin-bottom: -30px;
     height: 1px;
     background: #FFFFFF;
   }
@@ -1046,7 +1043,7 @@ body {
   .logo-wrap {
     display: grid;
     padding: 16px 16px;
-    margin-left: -12px;
+    margin-bottom: -20px;
     grid-template-columns: repeat(2, 1fr);
   }
 
