@@ -1,11 +1,10 @@
-function CopyMe(TextToCopy) {
-  var TempText = document.createElement("input");
-  TempText.value = TextToCopy;
-  document.body.appendChild(TempText);
-  TempText.select();
-
-  document.execCommand("copy");
-  document.body.removeChild(TempText);
-
-  alert("Copied the text: " + TempText.value);
+function CopyMe(text) {
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      console.log(`Copied to clipboard: ${text}`);
+      alert(`Copied to clipboard: ${text}`);
+    })
+    .catch((error) => {
+      console.error(`Could not copy email address: ${error}`);
+    });
 }
