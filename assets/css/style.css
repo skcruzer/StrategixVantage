@@ -60,6 +60,10 @@ body {
   object-position: center;
 }
 
+.header-social:hover {
+  opacity: .9;
+}
+
 .header-button {
   border: none;
   background-color: #ffffff;
@@ -640,6 +644,10 @@ body {
   gap: 10px;
 }
 
+.logo-card:hover {
+  opacity: .8;
+}
+
 
 
 /* ======================== cta section ======================== */
@@ -815,6 +823,10 @@ body {
   flex-shrink: 0;
   object-fit: cover;
   object-position: center;
+}
+
+.footer-social:hover {
+  opacity: .9;
 }
 
 .footer-button {
@@ -1710,10 +1722,10 @@ body {
     align-self: stretch;
   }
 
-.copyright {
-  font-size: 12px;
-  margin-top: 10px;
-}
+  .copyright {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 
   .ellipse-1, .ellipse-2, .ellipse-3, .ellipse-4, .ellipse-5 {
     visibility: hidden;
