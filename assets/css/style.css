@@ -47,6 +47,14 @@ body {
   align-items: flex-end;
 }
 
+.header-button {
+  border: none;
+  background-color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+}
+
 .header-social {
   position: relative;
   width: 32px;
@@ -59,20 +67,12 @@ body {
   -o-border-radius: 4px;
 }
 
-.header-email {
-  margin-left: -7px;
-  margin-top: -2px;
-}
 
 .header-linkedin {
   width: 33px;
   height: 33px;
 }
 
-/* .header-social:hover {
-  color: var(--neutral-50);
-  background-color: #343D46;
-} */
 
 /* ======================== hero section ======================== */
 .grid-hero {
@@ -645,10 +645,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
 }
 
 
@@ -808,8 +804,9 @@ body {
   /* 155.556% */
 }
 
-.footer-social {
+.footer-right {
   display: flex;
+  position: relative;
   align-items: flex-start;
   gap: 16px;
 }
@@ -817,21 +814,20 @@ body {
 .link-item {
   display: flex;
   border-radius: 4px;
-  background: var(--neutral-50, #F4F5F5);
+  background: var(--neutral-900, #111417);
   width: 32px;
   height: 32px;
   flex-shrink: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  object-fit: cover;
+  object-position: center;
 }
 
-.footer-email {
+.footer-button {
+  border: none;
+  background-color: var(--neutral-900, #111417);
   width: 32px;
   height: 32px;
-  margin-left: -7px;
-  margin-top: -2px;
+  margin-right: 4px;
 }
 
 .ellipse-1 {
@@ -856,10 +852,6 @@ body {
   left: 312px;
   background-color: #013369;
   border-radius: 25.5px;
-  -webkit-border-radius: 25.5px;
-  -moz-border-radius: 25.5px;
-  -ms-border-radius: 25.5px;
-  -o-border-radius: 25.5px;
 }
 
 .ellipse-3 {
@@ -1187,11 +1179,8 @@ body {
     align-items: center;
   }
 
-  .footer-email {
-    width: 40px;
-    height: 40px;
-    margin-left: 3px;
-    margin-top: 2px;
+  .footer-right {
+    gap: 16px;
   }
 
   .ellipse-1, .ellipse-2, .ellipse-3, .ellipse-4, .ellipse-5 {
@@ -1488,7 +1477,7 @@ body {
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 451px) {
+@media screen and (min-width: 451px) and (max-width: 924px) {
   .grid {
     display: flex;
     width: 100%;
@@ -1723,9 +1712,249 @@ body {
 
 }
 
+@media screen and (min-width: 925px) and (max-width: 1169px) {
+  .grid {
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-logo {
+    display: flex;
+    width: 90px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .header-right {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .header-social {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  .grid-hero {
+    display: flex;
+    width: 100%;
+    padding: 52px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+  }
+
+  .results {
+    align-self: stretch;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    /* 122.222% */
+    letter-spacing: -1.44px;
+  }
+
+  .hero-paragraph {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .hero-button {
+    width: 40%;
+    margin-left: 300px;
+
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-left: 210px;
+  }
+
+  .grid-stat {
+    display: flex;
+    width: 100%;
+    padding: 52px 24px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .success-statement {
+    align-self: stretch;
+    text-align: center;
+    /* Mobile/H2/Medium */
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    /* 112.5% */
+  }
+
+  .founders-statement {
+    align-self: stretch;
+    text-align: center;
+    /* Paragraph/P2/Regular */
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+  }
 
 
-@media screen and (min-width: 1150px) and (max-width: 1400px) {
+  .stat-right {
+    margin-left: 400px;
+    margin-top: 10px;
+  }
+
+  .stat-card {
+    display: flex;
+    padding: 16px 12px;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    padding-bottom: 20px;
+  }
+
+  .stat-col-1, .stat-col-2 {
+    gap: 20px;
+  }
+
+  /* ========== services section ==========  */
+
+  .services {
+    padding: 52px 24px;
+    width: 100%;
+  }
+
+  .services-title, .services-line {
+    text-align: center;
+  }
+
+  .grid-services {
+    display: flex;
+    width: 300px;
+    margin-left: 170px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .services-left {
+    flex-direction: row;
+    position: relative;
+    order: 1;
+  }
+
+  .services-middle {
+    flex-direction: row;
+    position: relative;
+    order: 2;
+  }
+
+  .services-right {
+    flex-direction: row;
+    position: relative;
+    order: 3;
+  }
+
+  .services-left, .services-middle, .services-right {
+    column-gap: 20px;
+  }
+
+  .services-card {
+    display: flex;
+    width: 100%;
+    padding: px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .serv-heading, .serv-paragraph {
+    text-align: center;
+    align-self: stretch;
+  }
+
+  /* ========== test section ==========  */
+
+  .testimonials {
+    padding: 52px 24px;
+  }
+
+  .row {
+    display: inline;
+  }
+
+  .profile {
+    padding-bottom: 20px;
+  }
+
+  .quote-mark {
+    padding-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  .carousel-item {
+    width: 100%;
+    height: 300px !important;
+  }
+
+  .test-navigate {
+    margin-top: -20px;
+    margin-left: -50px;
+  }
+
+  .test-divider {
+    width: 100%;
+    margin: 0px 0px;
+    height: 1px;
+    background: #FFFFFF;
+  }
+
+  .logo-wrap {
+    display: grid;
+    padding: 16px 16px;
+    margin-bottom: -20px;
+    margin-left: 75px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .logo-card {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* ========== footer section ==========  */
+
+  .footer {
+    display: grid;
+    padding: 32px 20px;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+
+  .ellipse-1, .ellipse-2, .ellipse-3, .ellipse-4, .ellipse-5 {
+    visibility: hidden;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1170px) and (max-width: 1350px) {
 
 
 
@@ -1784,7 +2013,7 @@ body {
 }
 
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 2100px) {
 
 
 
