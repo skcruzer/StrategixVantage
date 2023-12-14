@@ -52,7 +52,7 @@ body {
   background-color: #FFFFFF;
   width: 32px;
   height: 32px;
-  margin-right: 4px;
+  
 }
 
 .header-social {
@@ -61,17 +61,8 @@ body {
   height: 32px;
   background-color: var(--neutral-800);
   border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
 }
 
-
-.header-linkedin {
-  width: 33px;
-  height: 33px;
-}
 
 
 /* ======================== hero section ======================== */
@@ -1173,15 +1164,13 @@ body {
 
   .link-item {
     display: flex;
-    width: 39px;
-    height: 39px;
+    width: 40px;
+    height: 40px;
     justify-content: center;
     align-items: center;
   }
 
-  .footer-right {
-    gap: 16px;
-  }
+ 
 
   .ellipse-1, .ellipse-2, .ellipse-3, .ellipse-4, .ellipse-5 {
     visibility: hidden;
@@ -1458,17 +1447,15 @@ body {
 
   .link-item {
     display: flex;
-    width: 39px;
-    height: 39px;
+    width: 40px;
+    height: 40px;
     justify-content: center;
     align-items: center;
   }
 
-  .footer-email {
-    width: 40px;
-    height: 40px;
-    margin-left: 3px;
-    margin-top: 2px;
+  .footer-button {
+    width: 30px;
+    height: 30px;
   }
 
   .ellipse-1, .ellipse-2, .ellipse-3, .ellipse-4, .ellipse-5 {
