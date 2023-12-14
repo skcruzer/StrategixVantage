@@ -6,8 +6,6 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
-  /* margin: 0 auto; */
-  /* padding-bottom: 50px; */
 }
 
 /* ======================== header ======================== */
@@ -477,7 +475,7 @@ body {
 }
 
 .test-line {
- 
+
   color: var(--neutral-200, #D5DADF);
 
   /* Paragraph/P2/Regular */
@@ -898,7 +896,10 @@ body {
 /* ======================== media queries ======================== */
 @media screen and (max-width: 395px) {
 
-
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
   /* ============ header mq ============  */
   .grid {
@@ -1197,6 +1198,11 @@ body {
 
 @media screen and (min-width: 396px) and (max-width: 450px) {
 
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   /* ============ header mq ============  */
   .grid {
     display: flex;
@@ -1485,6 +1491,12 @@ body {
 }
 
 @media screen and (min-width: 451px) and (max-width: 924px) {
+
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .grid {
     display: flex;
     width: 100%;
@@ -1720,6 +1732,12 @@ body {
 }
 
 @media screen and (min-width: 925px) and (max-width: 1169px) {
+
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .grid {
     display: flex;
     width: 100%;
@@ -1963,7 +1981,10 @@ body {
 
 @media screen and (min-width: 1170px) and (max-width: 1350px) {
 
-
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
   .call-to-action {
     padding-left: 25px;
@@ -2022,7 +2043,10 @@ body {
 
 @media screen and (min-width: 2100px) {
 
-
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
   .test-name {
     font-size: 25px;
