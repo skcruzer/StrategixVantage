@@ -477,7 +477,7 @@ body {
 }
 
 .test-line {
-  width: 482.88px;
+ 
   color: var(--neutral-200, #D5DADF);
 
   /* Paragraph/P2/Regular */
@@ -664,7 +664,7 @@ body {
 .cta-frame {
   display: flex;
   flex-direction: column;
-  width: 556px;
+  width: 100%;
   align-items: center;
   flex: 0 0 auto;
   gap: 20px;
