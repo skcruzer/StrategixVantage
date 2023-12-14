@@ -6,7 +6,7 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding-bottom: 50px; */
 }
 
@@ -1169,7 +1169,7 @@ body {
   }
 
   .footer-right {
-    gap: 10px;
+    gap: 25px;
   }
 
 
