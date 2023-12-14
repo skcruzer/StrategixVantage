@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Poppins:wght@500;600&display=swap');
 
 
+/* Apply a max-width to the body element */
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0 auto;
   /* padding-bottom: 50px; */
 }
@@ -918,7 +921,7 @@ body {
   .header-right {
     display: inline-flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 30px;
   }
 
   .header-social {
@@ -1165,13 +1168,22 @@ body {
     align-self: stretch;
   }
 
+  .footer-right {
+    gap: 30px;
+  }
 
-  .link-item {
+
+  .footer-social {
     display: flex;
     width: 40px;
     height: 40px;
     justify-content: center;
     align-items: center;
+  }
+
+  .footer-button {
+    width: 30px;
+    height: 30px;
   }
 
 
@@ -1449,7 +1461,11 @@ body {
   }
 
 
-  .link-item {
+  .footer-right {
+    gap: 30px;
+  }
+
+  .footer-social {
     display: flex;
     width: 40px;
     height: 40px;
