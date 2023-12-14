@@ -929,7 +929,7 @@ body {
   .header-right {
     display: inline-flex;
     align-items: flex-start;
-    gap: 30px;
+    gap: 24px;
   }
 
   .header-social {
