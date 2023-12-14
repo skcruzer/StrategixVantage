@@ -1177,7 +1177,7 @@ body {
   }
 
   .footer-right {
-    gap: 25px;
+    gap: 30px;
   }
 
 
@@ -1227,7 +1227,7 @@ body {
   .header-right {
     display: inline-flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 24px;
   }
 
   .header-social {
@@ -1472,6 +1472,7 @@ body {
 
   .footer-right {
     gap: 30px;
+    margin-right: 10px;
   }
 
   .footer-social {
