@@ -1488,7 +1488,7 @@ body {
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 850px) {
+@media screen and (min-width: 600px) and (max-width: 451px) {
   .grid {
     display: flex;
     width: 100%;
@@ -1725,7 +1725,7 @@ body {
 
 
 
-@media screen and (min-width: 1150px) and (max-width: 1370px) {
+@media screen and (min-width: 1150px) and (max-width: 1400px) {
 
 
 
@@ -1751,11 +1751,11 @@ body {
   }
 
   .test-navigate {
-    margin-left: -100px;
+    margin-left: -65px;
   }
 
   .logo-wrap {
-    margin-left: -20px;
+    margin-left: 15px;
     gap: 25px;
   }
 
