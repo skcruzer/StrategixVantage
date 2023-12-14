@@ -47,21 +47,25 @@ body {
   align-items: flex-end;
 }
 
-.header-button {
-  border: none;
-  background-color: #FFFFFF;
-  width: 32px;
-  height: 32px;
-  
-}
-
 .header-social {
   position: relative;
   width: 32px;
   height: 32px;
-  background-color: var(--neutral-800);
+  background-color: #ffffff;
   border-radius: 4px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
 }
+
+.header-button {
+  border: none;
+  background-color: #ffffff;
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+}
+
 
 
 
@@ -802,7 +806,7 @@ body {
   gap: 16px;
 }
 
-.link-item {
+.footer-social {
   display: flex;
   border-radius: 4px;
   background: var(--neutral-900, #111417);
@@ -1170,7 +1174,7 @@ body {
     align-items: center;
   }
 
- 
+
 
   .ellipse-1, .ellipse-2, .ellipse-3, .ellipse-4, .ellipse-5 {
     visibility: hidden;
