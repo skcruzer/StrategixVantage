@@ -61,7 +61,7 @@ body {
 }
 
 .header-social:hover {
-  opacity: .9;
+  opacity: .5;
 }
 
 .header-button {
@@ -607,11 +607,7 @@ body {
   position: relative;
   flex: 0 0 auto;
   border-radius: 8px;
-  opacity: .9;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  opacity: .7;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon:hover {
@@ -645,7 +641,7 @@ body {
 }
 
 .logo-card:hover {
-  opacity: .8;
+  opacity: .5;
 }
 
 
@@ -826,7 +822,7 @@ body {
 }
 
 .footer-social:hover {
-  opacity: .9;
+  opacity: .5;
 }
 
 .footer-button {
